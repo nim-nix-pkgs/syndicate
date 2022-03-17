@@ -11,7 +11,7 @@
   inputs.src-syndicate-1_1_0.owner = "~ehmry";
   inputs.src-syndicate-1_1_0.ref   = "refs/tags/1.1.0";
   inputs.src-syndicate-1_1_0.repo  = "syndicate-nim";
-  inputs.src-syndicate-1_1_0.type  = "other";
+  inputs.src-syndicate-1_1_0.type  = "sourcehut";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
