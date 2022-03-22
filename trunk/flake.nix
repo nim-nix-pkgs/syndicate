@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-syndicate-1_0_0.flake = false;
-  inputs.src-syndicate-1_0_0.owner = "~ehmry";
-  inputs.src-syndicate-1_0_0.ref   = "1_0_0";
-  inputs.src-syndicate-1_0_0.repo  = "syndicate-nim";
-  inputs.src-syndicate-1_0_0.type  = "sourcehut";
+  inputs.src-syndicate-trunk.flake = false;
+  inputs.src-syndicate-trunk.owner = "~ehmry";
+  inputs.src-syndicate-trunk.ref   = "trunk";
+  inputs.src-syndicate-trunk.repo  = "syndicate-nim";
+  inputs.src-syndicate-trunk.type  = "sourcehut";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
@@ -24,7 +24,7 @@
   inputs."preserves".owner = "nim-nix-pkgs";
   inputs."preserves".ref   = "master";
   inputs."preserves".repo  = "preserves";
-  inputs."preserves".dir   = "v3_2_0";
+  inputs."preserves".dir   = "";
   inputs."preserves".type  = "github";
   inputs."preserves".inputs.nixpkgs.follows = "nixpkgs";
   inputs."preserves".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -32,10 +32,10 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-syndicate-1_0_0"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-syndicate-trunk"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-syndicate-1_0_0";
+    src  = deps."src-syndicate-trunk";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };
