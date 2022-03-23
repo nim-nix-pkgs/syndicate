@@ -8,7 +8,7 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-syndicate-1_1_0.flake = false;
-  inputs.src-syndicate-1_1_0.ref   = "refs/tags/1.1.0";
+  inputs.src-syndicate-1_1_0.ref   = "1.1.0";
   inputs.src-syndicate-1_1_0.owner = "~ehmry";
   inputs.src-syndicate-1_1_0.repo  = "syndicate-nim";
   inputs.src-syndicate-1_1_0.type  = "sourcehut";
