@@ -153,7 +153,7 @@
         "nimsha2": "nimsha2",
         "nixpkgs": "nixpkgs",
         "preserves": "preserves",
-        "src-syndicate-trunk": "src-syndicate-trunk"
+        "src-syndicate-devel": "src-syndicate-devel"
       }
     },
     "src-compiler-v1_6_6": {
@@ -224,19 +224,19 @@
         "type": "sourcehut"
       }
     },
-    "src-syndicate-trunk": {
+    "src-syndicate-devel": {
       "flake": false,
       "locked": {
-        "lastModified": 1647648650,
-        "narHash": "sha256-jjH1j9wmyOnTtyUgCqlVrk17CSUMCNDGfag5Yar70ds=",
+        "lastModified": 1636289970,
+        "narHash": "sha256-92t+15VD8acBcdkEQoyQrK3O9sDVYgQM1Rw8hm/wBI0=",
         "owner": "~ehmry",
         "repo": "syndicate-nim",
-        "rev": "4454d19b603189f9a6da3517a746f172c99fb58b",
+        "rev": "401d02e39b3153780b8e003819605bde3b8b6870",
         "type": "sourcehut"
       },
       "original": {
         "owner": "~ehmry",
-        "ref": "trunk",
+        "ref": "devel",
         "repo": "syndicate-nim",
         "type": "sourcehut"
       }
