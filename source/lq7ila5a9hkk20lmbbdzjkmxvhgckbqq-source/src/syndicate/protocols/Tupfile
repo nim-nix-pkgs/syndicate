@@ -1,0 +1,19 @@
+include_rules
+outputs = \
+  dataspace.nim \
+  dataspacePatterns.nim \
+  gatekeeper.nim \
+  protocol.nim \
+  racketEvent.nim \
+  secureChatProtocol.nim \
+  service.nim \
+  simpleChatProtocol.nim \
+  stream.nim \
+  sturdy.nim \
+  tcp.nim \
+  timer.nim \
+  trace.nim \
+  transportAddress.nim \
+  worker.nim \
+
+: foreach ../../../protocols/schema-bundle.bin |> !preserves_schema_nim |> $(outputs)
