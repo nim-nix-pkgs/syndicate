@@ -1,5 +1,0 @@
-tests/test_box_and_client
-tests/test_dsl
-tests/test_timer
-*.nim.check
-.tup
