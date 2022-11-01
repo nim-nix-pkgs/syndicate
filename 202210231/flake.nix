@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-syndicate-20220829.flake = false;
-  inputs.src-syndicate-20220829.ref   = "20220829";
-  inputs.src-syndicate-20220829.owner = "~ehmry";
-  inputs.src-syndicate-20220829.repo  = "syndicate-nim";
-  inputs.src-syndicate-20220829.type  = "sourcehut";
+  inputs.src-syndicate-202210231.flake = false;
+  inputs.src-syndicate-202210231.ref   = "202210231";
+  inputs.src-syndicate-202210231.owner = "~ehmry";
+  inputs.src-syndicate-202210231.repo  = "syndicate-nim";
+  inputs.src-syndicate-202210231.type  = "sourcehut";
   
   inputs."nimsha2".owner = "nim-nix-pkgs";
   inputs."nimsha2".ref   = "master";
@@ -32,13 +32,13 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-syndicate-20220829"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-syndicate-202210231"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-syndicate-20220829";
+    src  = deps."src-syndicate-202210231";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
