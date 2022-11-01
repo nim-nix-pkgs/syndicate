@@ -125,7 +125,7 @@
         "nimsha2": "nimsha2",
         "nixpkgs": "nixpkgs",
         "preserves": "preserves",
-        "src-syndicate-trunk": "src-syndicate-trunk"
+        "src-syndicate-202210231": "src-syndicate-202210231"
       }
     },
     "src-nimSHA2-master": {
@@ -179,7 +179,7 @@
         "type": "sourcehut"
       }
     },
-    "src-syndicate-trunk": {
+    "src-syndicate-202210231": {
       "flake": false,
       "locked": {
         "lastModified": 1667228433,
@@ -191,7 +191,7 @@
       },
       "original": {
         "owner": "~ehmry",
-        "ref": "trunk",
+        "ref": "202210231",
         "repo": "syndicate-nim",
         "type": "sourcehut"
       }
